@@ -1,5 +1,7 @@
 package com.ada.locateCarProject.model;
 
+import com.ada.locateCarProject.enums.CarSize;
+
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;

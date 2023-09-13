@@ -1,5 +1,7 @@
 package com.ada.locateCarProject.model;
 
+import com.ada.locateCarProject.util.RentalDiscount;
+
 public class Client {
     protected String name;
     protected String telephone;

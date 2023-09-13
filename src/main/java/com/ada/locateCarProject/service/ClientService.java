@@ -1,5 +1,11 @@
 package com.ada.locateCarProject.service;
 
+import com.ada.locateCarProject.model.Client;
+import com.ada.locateCarProject.model.ClientPessoaFisica;
+import com.ada.locateCarProject.model.ClientPessoaJuridica;
+import com.ada.locateCarProject.util.RentalDiscount;
+
+
 import java.util.List;
 import java.util.Optional;
 

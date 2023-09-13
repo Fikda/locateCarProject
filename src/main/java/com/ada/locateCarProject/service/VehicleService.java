@@ -1,5 +1,8 @@
 package com.ada.locateCarProject.service;
 
+import com.ada.locateCarProject.enums.CarSize;
+import com.ada.locateCarProject.model.Vehicle;
+
 import java.util.List;
 import java.util.Optional;
 

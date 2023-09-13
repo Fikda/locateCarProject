@@ -1,10 +1,13 @@
 package com.ada.locateCarProject.model;
 
-public class ClientPessoJuridica extends Client {
+import com.ada.locateCarProject.util.RentalDiscount;
+
+public class ClientPessoaJuridica extends Client {
     private String cnpj;
 
-    public ClientPessoJuridica(String name, String telephone, RentalDiscount rentalDiscount) {
+    public ClientPessoaJuridica(String name, String telephone, RentalDiscount rentalDiscount,String cnpj ) {
         super(name, telephone, rentalDiscount);
+        this.cnpj = cnpj;
     }
 
     public String getIdentifier(){
@@ -14,7 +17,7 @@ public class ClientPessoJuridica extends Client {
         return cnpj;
     }
 
-    public void updateClient(String name, String telephone, RentalDiscount rentalDiscount,String cnpj) {
+    public void updateClient(String name, String telephone, RentalDiscount rentalDiscount, String cnpj) {
         if (name != null) {
             this.name = name;
         }

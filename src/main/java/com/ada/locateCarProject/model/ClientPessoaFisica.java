@@ -1,5 +1,7 @@
 package com.ada.locateCarProject.model;
 
+import com.ada.locateCarProject.util.RentalDiscount;
+
 public class ClientPessoaFisica extends Client{
 
     private String cpf;
@@ -7,6 +9,8 @@ public class ClientPessoaFisica extends Client{
         super(name, telephone, rentalDiscount);
         this.cpf = cpf;
     }
+
+
     @Override
     public String getIdentifier() {
         return cpf;
