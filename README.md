@@ -14,5 +14,5 @@
 #### <h3>Dificuldades para fazer o projeto:</h3> 
 <h5>- Estruturar o projeto; </h5>
 <h5>- Aplicar alguns conceitos do Solid;</h5>
-<h5>- Pensar nos algortimos;</h5>
+<h5>- Pensar nos algoritmos;</h5>
 ***
