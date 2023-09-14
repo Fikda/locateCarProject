@@ -12,7 +12,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,16 +60,15 @@ public class LocateCarProjectApplication {
 		vehicleService.addVehicle(mediumCar2);
 		vehicleService.addVehicle(suvCar2);
 
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm");
 
 		System.out.println("________________");
 		rentalService.rentVehicle(clientPF, smallCar, "AV.Paulista", LocalDateTime.of(2023, 9, 5, 10, 00), LocalDateTime.of(2023, 9, 26, 15, 30), smallVehiclePrice);
 
 		System.out.println("________________");
-		rentalService.rentVehicle(clientPJ, mediumCar, "Congonhas", LocalDateTime.of(2023, 9, 11, 6, 45), LocalDateTime.of(2023, 9, 15, 6, 30), mediumVehiclePrice); // 150 * 4 = 600.00 * 0.10 = 540.00
+		rentalService.rentVehicle(clientPJ, mediumCar, "Congonhas", LocalDateTime.of(2023, 9, 11, 6, 45), LocalDateTime.of(2023, 9, 15, 6, 30), mediumVehiclePrice);
 
 		System.out.println("__________________");
-		rentalService.rentVehicle(clientPF, suvCar, "Guarulhos", LocalDateTime.of(2023, 9, 7, 9, 25), LocalDateTime.of(2023, 9, 13, 21, 25), suvVehiclePrice); // 200 * 6 = 1200 * 0.05 = 1140.00
+		rentalService.rentVehicle(clientPF, suvCar, "Guarulhos", LocalDateTime.of(2023, 9, 7, 9, 25), LocalDateTime.of(2023, 9, 13, 21, 25), suvVehiclePrice);
 
 		System.out.println("________________");
 		rentalService.returnVehicle(smallCar);
